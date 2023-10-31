@@ -65,7 +65,7 @@ def_string(py::module_ &data_module)
             "__repr__",
             [](const immutable_string &self)
             {
-                return fmt::format("CString('{}')", self);
+                return "repr is broken"; //fmt::format("CString('{}')", self);
             })
 
         .def(
